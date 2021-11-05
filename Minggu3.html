@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+    <title>Minggu 3</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="bg"></div>
+        <p>Select theme:
+            <select onchange="changecolor(this.value)">
+                <option value="White">White</option>
+                <option value="Green">Green</option>
+                <option value="Aqua">Aqua</option>
+                <option value="Black">Black</option>
+            </select>
+        </p>
+    </section>
+    <br> <br>
+    <h1>This is my website</h1>
+    <br>
+    <section>
+        <div class="weather"></div>
+        <p>Select the weather type today:
+            <select onchange="weather(this.value)">
+                <option value="Rainy">Rainy</option>
+                <option value="Sunny">Sunny</option>
+            </select>
+            <p id="message"></p>
+        </p>
+    </section>
+    <br> <br> <br>
+    <section>
+        <p>Input number:
+            <input type="text" id="num">
+            <button onclick="faktorial()">Get Faktorial</button>
+            <p id="hasil"></p>
+        </p>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
